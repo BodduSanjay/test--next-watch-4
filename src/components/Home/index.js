@@ -138,7 +138,7 @@ class Home extends Component {
           const {isLight} = value
 
           return (
-            <UlCont isLight={isLight}>
+            <UlCont data-testid="home" isLight={isLight}>
               {videosList.map(each => (
                 <VidoeListItem each={each} key={each.id} />
               ))}
@@ -165,7 +165,13 @@ class Home extends Component {
               We are having some trouble to complete your request. Please try
               again.
             </FailurePara>
-            <RetryBtn onClick={this.getVideos}>Retry</RetryBtn>
+            <button
+              type="button"
+              className="home-retry-button"
+              onClick={this.getVideos}
+            >
+              Retry
+            </button>
           </ColumnCont>
         )
       }}
@@ -195,7 +201,7 @@ class Home extends Component {
           const {isLight} = value
 
           return (
-            <HomeBgDiv data-testid="home" isLight={isLight}>
+            <HomeBgDiv isLight={isLight}>
               <Header />
               <SideVideoDiv>
                 <SideNav />

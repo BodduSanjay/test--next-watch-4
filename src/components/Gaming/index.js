@@ -5,7 +5,7 @@ import {SiYoutubegaming} from 'react-icons/si'
 
 import Vidoecontext from '../../contextComponent/componetcontext'
 import {
-  HomeBgDiv,
+  HomeBgDivGame,
   SideVideoDiv,
   VideosDiv,
   ColumnCont,
@@ -141,13 +141,13 @@ class Gaming extends Component {
 
   render() {
     return (
-      <HomeBgDiv>
+      <HomeBgDivGame>
         <Header />
         <SideVideoDiv>
           <SideNav />
           <VideosDiv>{this.renderAll()}</VideosDiv>
         </SideVideoDiv>
-      </HomeBgDiv>
+      </HomeBgDivGame>
     )
   }
 }

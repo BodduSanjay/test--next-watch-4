@@ -5,6 +5,7 @@ export const HomeBgDiv = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-color: ${props => (props.isLight ? 'white' : 'black')};
 `
 export const SideVideoDiv = styled.div`
   display: flex;

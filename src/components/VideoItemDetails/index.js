@@ -11,6 +11,7 @@ import {
   SideVideoDiv,
   VideosDiv,
   ColumnCont,
+  ChannelName,
   FailureImage,
   FailureH1,
   FailurePara,
@@ -103,8 +104,8 @@ class VideoItemDetails extends Component {
 
   renderLoader = () => (
     <ColumnCont>
-      <div className='loader-container' data-testid='loader'>
-        <Loader type='ThreeDots' color='#ffffff' height='50' width='50' />
+      <div className="loader-container" data-testid="loader">
+        <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
       </div>
     </ColumnCont>
   )
@@ -119,7 +120,7 @@ class VideoItemDetails extends Component {
 
         return (
           <ColumnCont>
-            <FailureImage src={failureImageUrl} alt='failure view' />
+            <FailureImage src={failureImageUrl} alt="failure view" />
             <FailureH1 isLight={isLight}>Oops! Something Went Wrong</FailureH1>
             <FailurePara isLight={isLight}>
               We are having some trouble to complete your request. Please try
@@ -175,17 +176,17 @@ class VideoItemDetails extends Component {
               url={videoUrl}
               playing
               controls
-              width='90%'
-              height='40%'
+              width="90%"
+              height="40%"
             />
             <TitlePara isLight={isLight}>{title}</TitlePara>
             <RowCont isLight={isLight}>
               <ViewsCont>
                 <FailurePara>{viewCount} views</FailurePara>
                 <DotPara>.</DotPara>
-                <FailurePara as='p'>
+                <ChannelName as="p" isLight={isLight}>
                   {formatDistanceToNow(new Date(publishedAt))}
-                </FailurePara>
+                </ChannelName>
               </ViewsCont>
               <EngageCont>
                 <LikeContBtn isLiked={isLight} onClick={this.liked}>
@@ -208,7 +209,7 @@ class VideoItemDetails extends Component {
             </RowCont>
             <BorderPara> </BorderPara>
             <ChannelCont isLight={isLight}>
-              <ProfileCh src={profileImageUrl} alt='channel logo' />
+              <ProfileCh src={profileImageUrl} alt="channel logo" />
               <ChannelNameCont>
                 <TitlePara isLight={isLight}>{name}</TitlePara>
                 <FailurePara>{subscriberCount} subscribers</FailurePara>
@@ -241,7 +242,7 @@ class VideoItemDetails extends Component {
         {value => {
           const {isLight} = value
           return (
-            <HomeBgDiv data-testid='videoItemDetails' isLight={isLight}>
+            <HomeBgDiv data-testid="videoItemDetails" isLight={isLight}>
               <Header />
               <SideVideoDiv>
                 <SideNav />

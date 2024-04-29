@@ -28,11 +28,11 @@ const VidoeListItem = ({each}) => (
       }
       const {name, profileImageUrl} = formattedChannel
       return (
-        <Link className='vidoeListItemLink' to={`/videos/${id}`}>
+        <Link className="vidoeListItemLink" to={`/videos/${id}`}>
           <ListItemVideo>
-            <ThumbnailImage src={thumbnailUrl} alt='video thumbnail' />
+            <ThumbnailImage src={thumbnailUrl} alt="video thumbnail" />
             <TitleLogoCont>
-              <ChannelLogo src={profileImageUrl} alt='channel logo' />
+              <ChannelLogo src={profileImageUrl} alt="channel logo" />
               <VideoDetailsCont>
                 <Title isLight={isLight}>{title}</Title>
                 <ReachCont>
@@ -43,7 +43,7 @@ const VidoeListItem = ({each}) => (
                       {viewCount} views
                     </ChannelName>
                     <ChannelNameDont isLight={isLight}>.</ChannelNameDont>
-                    <ChannelName as='p' isLight={isLight}>
+                    <ChannelName as="p" isLight={isLight}>
                       {formatDistanceToNow(new Date(publishedAt))}
                     </ChannelName>
                   </Reach>

@@ -115,7 +115,7 @@ class Trending extends Component {
               </IconBgDiv>
               <p className="heading-trending">Trending</p>
             </TypeCont>
-            <TrendingUlCont data-testid="trending" isLight={isLight}>
+            <TrendingUlCont isLight={isLight}>
               {trendingVideosList.map(each => (
                 <TrendingVideosItem each={each} key={each.id} />
               ))}

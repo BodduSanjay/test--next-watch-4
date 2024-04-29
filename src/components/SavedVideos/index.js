@@ -12,7 +12,6 @@ import {
   TypeVideosDiv,
   TypeCont,
   IconBgDiv,
-  Heading,
   TrendingUlCont,
 } from './styledComponents'
 
@@ -38,7 +37,7 @@ const SavedVideos = () => (
                     <IconBgDiv isLight={isLight}>
                       <MdPlaylistAdd color="red" height="25px" width="25px" />
                     </IconBgDiv>
-                    <Heading as="h1">Saved Videos</Heading>
+                    <p className="heading-Saved">Saved Videos</p>
                   </TypeCont>
                   <TrendingUlCont isLight={isLight}>
                     {savedVideoList.map(each => (

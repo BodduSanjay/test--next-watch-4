@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-export const HomeBgDiv = styled.div`
+export const HomeBgDivGame = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-color: ${props => (props.isLight ? 'white' : 'black')};
 `
 export const SideVideoDiv = styled.div`
   display: flex;

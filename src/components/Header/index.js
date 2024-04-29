@@ -184,7 +184,7 @@ class Header extends Component {
                       <>
                         <AlertContainer isLight={isLight}>
                           <AlertPara as="p">
-                            Are you sure, you want to logout
+                            Are you sure, you want to logout?
                           </AlertPara>
                           <AlertBtnCont>
                             <ButtonCancel

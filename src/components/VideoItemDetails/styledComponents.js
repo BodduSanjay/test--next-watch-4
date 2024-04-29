@@ -11,6 +11,15 @@ export const SideVideoDiv = styled.div`
   display: flex;
   width: 100vw;
 `
+export const ChannelName = styled.p`
+  color: #7e858e;
+  margin: 0px 5px 10px 0px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: ${props => (props.isLight ? 'black' : 'white')};
+`
 export const BannerBtn = styled.button`
   height: 35px;
   width: 110px;
